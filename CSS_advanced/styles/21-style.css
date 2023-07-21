@@ -477,7 +477,7 @@ ul.row {
     width: 50%;
 
 }
-
+/* Estilos para la clase .col por todos */
 [class^="col-"] {
     float: left;
     padding: 0.5rem; 
