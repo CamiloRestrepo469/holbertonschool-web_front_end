@@ -448,7 +448,7 @@ a:active {
 }
 
 /* Estilos al pasar el cursor sobre .nav-link dentro de .nav */
-.nav-link:hover {
+.nav .nav-link:hover {
     color: var(--nav-item-link-hover);
 }
 
