@@ -537,6 +537,9 @@ h6 {
     background-color: var(--color-black);
 }
 
+  /*
+  Con estos estilos, la clase footer-address tendrá el color de texto definido por la propiedad --text-color. La clase social-link se mostrará como un elemento de bloque, y los elementos svg dentro de la clase social-link tendrán el color de relleno definido por la propiedad --text-color.
+  */
 
 /* Estilos para la clase footer-address */
 .footer-address {
@@ -549,11 +552,9 @@ h6 {
   }
   
   /* Estilos para la clase social-link y sus hijos svg */
-  .social-link svg {
+  .social-link > svg {
     fill: var(--text-color);
   }
 
-  /*
-  Con estos estilos, la clase footer-address tendrá el color de texto definido por la propiedad --text-color. La clase social-link se mostrará como un elemento de bloque, y los elementos svg dentro de la clase social-link tendrán el color de relleno definido por la propiedad --text-color.
-  */
+
   
