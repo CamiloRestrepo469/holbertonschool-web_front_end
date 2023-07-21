@@ -157,13 +157,20 @@ a {
     color: var(--section-title-color);
 }
 
+a[href] {
+    /* Estilos para enlaces con hipervínculo */
+}
+
+
 a[href]:visited {
     font-style: italic;
 }
 
+
 a[href]:hover {
     text-decoration: underline;
 }
+
 
 a[href]:active {
     background-color: var(--color-light-grey);
