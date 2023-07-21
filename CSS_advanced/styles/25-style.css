@@ -591,7 +591,9 @@ h6 {
     text-decoration: none;
   }
 
-  /* Estilos para la clase button */
+  /* Estilos para la clase button 
+  Con estos estilos, hemos definido las propiedades personalizadas en el selector :root, luego hemos creado un selector para la clase .button con estilos basados en las propiedades personalizadas, y también hemos definido estilos para el estado hover de la clase .button. Además, hemos agregado una regla para el atributo [data-section-theme="dark"], que redefine la variable --button-color para que apunte al valor de --color-white.
+  */
 .button {
     display: var(--button-display);
     padding: var(--button-padding);
