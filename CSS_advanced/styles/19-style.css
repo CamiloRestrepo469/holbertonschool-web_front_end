@@ -318,6 +318,23 @@ template {
     --section-tagline-margin: 0;
 }
 
+/*
+    content: "";: Define un contenido vacío para el elemento creado después de la clase .row. Esto es necesario para que la pseudo-clase :after funcione correctamente.
+
+    display: table;: Establece el comportamiento de visualización del elemento generado como una tabla. Esto permitirá que la fila creada se comporte como una fila de una tabla, ocupando todo el ancho disponible y sin permitir que otros elementos floten a su lado.
+
+    clear: both;: La propiedad clear evita que los elementos floten al lado izquierdo, derecho o ambos lados del elemento generado después de la clase .row. En este caso, both asegura que no se permita ningún elemento flotante en ningún lado de la fila creada.
+
+
+*/
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+
 /*el tamaño*/
 *,
 *:after,
