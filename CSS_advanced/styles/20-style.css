@@ -356,6 +356,7 @@ a:link {
 
 a:visited {
     font-style: italic;
+    /* Establece el estilo itálico para los enlaces visitados */
 }
 
 
@@ -374,11 +375,13 @@ a:active {
 
 .visually-hidden {
     display: none;
+    /* Oculta visualmente los elementos con la clase .visually-hidden */
 }
 
 .card-category {
     color: #D73953;
     color: var(--color-primary);
+    /* Utiliza la variable --color-primary para el color del texto */
 
 }
 
@@ -513,7 +516,7 @@ h6 {
     text-align: right;
 }
 
-
+/* Crea una nueva fila después de cada instancia de la clase .row */
 .row:after {
     content: "";
     display: table;
