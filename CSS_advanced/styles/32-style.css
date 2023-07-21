@@ -818,3 +818,32 @@ h6 {
     transition-property: color, background-color;
   }
   
+  /*
+  Explicación línea por línea:
+
+ Crear custom properties `: Esta línea es un comentario que indica que se van a definir propiedades personalizadas (variables) en el siguiente bloque de código.
+
+2. `:root`: Es un selector que apunta al elemento raíz del documento HTML, es decir, el elemento `<html>`. Es el lugar donde se definen las propiedades personalizadas (variables) que se aplicarán en todo el documento.
+
+3. `--transition-duration: 0.3s;`: Esta línea define una propiedad personalizada llamada `--transition-duration` y le asigna el valor `0.3s`, que indica la duración de las transiciones que se usarán en el sitio.
+
+4. `--transition-cubic-bezier: cubic-bezier(0.17, 0.67, 0, 1.01);`: Esta línea define otra propiedad personalizada llamada `--transition-cubic-bezier` y le asigna el valor `cubic-bezier(0.17, 0.67, 0, 1.01)`. Esta propiedad define una función de curva de Bezier para controlar el ritmo de las transiciones.
+
+5. `/* Transformaciones en card-work `: Este comentario simplemente indica que las siguientes líneas de código contienen estilos relacionados con las transformaciones cuando el cursor está sobre el elemento con la clase `.card-work`.
+
+6. `.card-work:hover .card-image`: Este selector selecciona el elemento con la clase `.card-image` que está dentro del elemento con la clase `.card-work` cuando el cursor está sobre el elemento con la clase `.card-work` (hover). La propiedad `transform` con el valor `scale(1.2)` aplica una escala de 1.2 al elemento `.card-image` cuando se activa el hover.
+
+7. `.card-work:hover .card-outer`: Similar al punto 6, este selector selecciona el elemento con la clase `.card-outer` que está dentro del elemento con la clase `.card-work` cuando el cursor está sobre el elemento con la clase `.card-work` (hover). La propiedad `transform` con el valor `scale(0.95)` aplica una escala de 0.95 al elemento `.card-outer` cuando se activa el hover.
+
+8. `/* Animaciones en los elementos de navegación `: Este comentario indica que las siguientes líneas de código contienen estilos relacionados con las animaciones en los elementos de navegación.
+
+9. `.nav .nav-link::before`: Este selector selecciona el pseudo-elemento `::before` de los elementos con la clase `.nav-link` que están dentro de un elemento con la clase `.nav`. La propiedad `transition` con los valores `var(--transition-duration)` y `var(--transition-cubic-bezier)` especifica la duración y la función de curva de Bezier para las transiciones en el pseudo-elemento `::before`.
+
+10. `.card-work .card-image`: Este selector selecciona el elemento con la clase `.card-image` que está dentro de un elemento con la clase `.card-work`. La propiedad `transition` con los valores `var(--transition-duration)` y `var(--transition-cubic-bezier)` especifica la duración y la función de curva de Bezier para las transiciones en el elemento `.card-image`.
+
+11. `.card-work .card-inner`: Este selector selecciona el elemento con la clase `.card-inner` que está dentro de un elemento con la clase `.card-work`. La propiedad `transition` con los valores `var(--transition-duration)` y `var(--transition-cubic-bezier)` especifica la duración y la función de curva de Bezier para las transiciones en el elemento `.card-inner`.
+
+12. `/* Transiciones en el hover del botón `: Este comentario indica que las siguientes líneas de código contienen estilos relacionados con las transiciones en el hover del botón.
+
+13. `.button:hover`: Este selector selecciona el elemento con la clase `.button` cuando el cursor está sobre el elemento (hover). Las propiedades `transition-duration` y `transition-property` especifican la duración y las propiedades que serán animadas durante la transición cuando el botón está en estado de hover. En este caso, las propiedades animadas son `color` y `background-color`. Las propiedades `transition-duration` y `transition-property` obtienen sus valores de las propiedades personalizadas `--transition-duration` y `--transition-cubic-bezier`, respectivamente, que definimos previamente en el bloque `:root`. 
+    */
