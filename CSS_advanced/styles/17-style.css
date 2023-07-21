@@ -8,7 +8,7 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
- html {
+html {
     line-height: 1.15;
     /* 1 */
     -webkit-text-size-adjust: 100%;
@@ -331,7 +331,6 @@ body {
     font-size: var(--font-size-medium);
     font-weight: var(--font-weight-regular);
     line-height: var(--line-height-base);
-    padding: var(--section-body-padding);
 }
 
 /*llamar a link*/
@@ -395,6 +394,10 @@ a:active {
     padding: var(--section-padding);
 }
 
+.section-body {
+    padding: var(--section-body-padding);
+}
+
 .section-header {
     text-align: var(--section-header-align);
     padding: var(--section-header-padding);
@@ -425,9 +428,9 @@ h6 {
 .section-footer {
     padding: var(--section-footer-padding);
     text-align: var(--section-footer-align);
-  }
-  
-  /* Estilos para la clase .footer */
-  .footer {
+}
+
+/* Estilos para la clase .footer */
+.footer {
     padding: var(--footer-padding);
-  }
+}
