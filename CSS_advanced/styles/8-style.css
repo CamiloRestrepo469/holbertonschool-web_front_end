@@ -117,5 +117,5 @@ h6 {
 }
 
 body {
-    line-height: var(--line-height-small);
+    line-height: var(--line-height-base);
 }
